@@ -9,3 +9,88 @@
   font-weight: 400;
   font-style: normal;
 }
+
+
+/* shared styles */
+
+.btn-primary{
+    background-color:rgba(255, 144, 14, 1) ;
+    color:rgba(255, 255, 255, 1) ;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    border-radius: 5px;
+    border: none;
+    
+}
+
+.dark-1{
+    color: rgba(19, 19, 19, 1);
+}
+
+.dark-2{
+    color: rgba(66, 66, 66, 1);
+}
+
+.dark-3{
+    color: rgba(114, 114, 114, 1);
+}
+
+.display-flex{
+    display: flex;
+}
+
+.bg-primary{
+    background-color:rgba(255, 144, 14, 0.1) ;
+}
+
+/* header styles */
+
+
+/* navbar related styles */
+
+.nav-bar{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar,.banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.nav-menu{
+    list-style: none;
+    gap: 30px;
+}
+.brand{
+    font-weight: bold;
+    font-size: 45px;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;  
+}
+
+/* banner related styles */
+
+.banner{
+    padding-bottom: 20px;
+}
+
+.banner-content{
+    text-align: center;
+    max-width: 862px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.banner-title{
+    font-size: 4rem;
+    font-weight: bold;
+}
+.banner-image{
+    width: 100%;
+}
