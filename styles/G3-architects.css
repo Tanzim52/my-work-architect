@@ -19,7 +19,7 @@
     padding: 20px 25px;
     font-size: 1.25rem;
     font-weight: 700;
-    border-radius: 5px;
+    border-radius: 8px;
     border: none;
     
 }
@@ -84,7 +84,7 @@
     text-align: center;
     max-width: 862px;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 .banner-title{
@@ -93,4 +93,27 @@
 }
 .banner-image{
     width: 100%;
+}
+
+
+@media screen and (max-width:576px) {
+    .nav-bar{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .brand{
+        font-size: 3rem;
+    }
+    .nav-menu{
+        padding: 0;
+    }
+    .banner-title{
+        font-size: 2rem;
+    }
+}
+@media screen and (min-width:577px) and (max-width:786px) {
+    .nav-bar{
+        padding: 0 20px;
+    }
 }
