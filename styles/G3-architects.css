@@ -269,6 +269,21 @@
     filter: grayscale(100%);
 }
 
+/* Footer style */
+
+.my-foot{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+    border-radius: 5px;
+    text-align: center;
+}
+.dev-sign{
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
 /* responsive styles */
 
 @media screen and (max-width:576px){
