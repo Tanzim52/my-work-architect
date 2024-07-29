@@ -45,6 +45,16 @@
     color: rgba(255, 144, 14, 1);
 }
 
+.nav-bar,
+.banner,
+.quick-list,
+.love-features,
+.some-facts
+{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
 /* header styles */
 
 /* navbar styles */
@@ -71,11 +81,6 @@
 .brand{
     font-size: 3rem;
     font-weight: bold;
-}
-
-.nav-bar,.banner{
-    max-width: 1440px;
-    margin: 0 auto;
 }
 
 /* banner styles */
@@ -106,6 +111,7 @@
     align-items: center;
     padding: 0 60px;
     margin-top: 85px;
+    margin-bottom: 130px;
 }
 .teams{
     display: grid;
@@ -126,6 +132,71 @@
     font-weight: 500;
 }
 
+/* features you will love related styles */
+
+.love-features{
+    justify-content: center;
+    gap: 54px;
+    margin-bottom: 130px;
+}
+
+.love-features-container{
+    max-width: 586px;
+}
+.love-features-description{
+    margin-bottom: 30px;
+}
+
+.love-features-title{
+    font-size: 2.8rem;
+    font-weight: bold;
+    border-left: 5px solid rgba(255, 144, 14, 1);
+    padding-left: 21px;
+    margin-bottom: 24px;
+}
+
+.love-card{
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    padding: 30px;
+    padding-right: 42px;
+}
+
+.card-title{
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+.card-subtitle{
+    margin:0px ;
+}
+
+.love-features-image{
+    flex-direction: column;
+    max-width: 708px;
+    max-height: 982px;
+}
+.pretty-lady{
+    width: 100%;
+}
+.btn-badge{
+    border-radius: 8px;
+    border: none;
+    background-color: rgba(255, 144, 14, 1);
+    color: rgba(255, 255, 255, 1);
+    padding: 46px 42px 45px;
+    max-width: 342px;
+    margin-left: -92px;
+    margin-top: -125px;
+}
+.chikna{
+    font-size: 1.56rem;
+    font-weight: 400;
+}
+.mota{
+    font-size: 4.06rem;
+    font-weight: bold;
+}
 
 /* responsive styles */
 
@@ -143,6 +214,50 @@
     .teams{
         grid-template-columns: 1fr;
         margin-right: 0px;
-        mar
+        
+    }
+    .love-features{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .btn-badge{
+        border-radius: 8px;
+        border: none;
+        background-color: rgba(255, 144, 14, 1);
+        color: rgba(255, 255, 255, 1);
+        padding: 46px 42px 45px;
+        max-width: 342px;
+        margin-left: 0px;
+        margin-top: 25px;
+    }
+    .love-features-image{
+        align-items: center;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:768px) {
+    .quick-list{
+        flex-direction: column;
+        margin-top: 35px;
+    }
+    .teams{
+        margin-right: 0px;   
+    }
+    .love-features{
+        flex-direction: column;
+        align-items: center;
+    }
+    .love-features-image{
+        align-items: center;
+    }
+    .btn-badge{
+        border-radius: 8px;
+        border: none;
+        background-color: rgba(255, 144, 14, 1);
+        color: rgba(255, 255, 255, 1);
+        padding: 46px 42px 45px;
+        max-width: 342px;
+        margin-left: 0px;
+        margin-top: 25px;
     }
 }
