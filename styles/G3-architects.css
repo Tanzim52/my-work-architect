@@ -198,6 +198,48 @@
     font-weight: bold;
 }
 
+/* Some Facts section */
+.some-facts{
+
+}
+.facts-description{
+    max-width: 542px;
+    margin-bottom: 100px;
+}
+.fact-title{
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+.fact-cards{
+    gap: 125px;
+    max-width: 1340px;
+    margin: 0 auto;
+}
+.card{
+    border: 1px solid  rgba(255, 144, 14, 1);
+    border-radius: 8px;
+    width: 242px;
+    height: 242px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card-head{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.card-body{
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+}
+
 /* responsive styles */
 
 @media screen and (max-width:576px){
@@ -219,6 +261,7 @@
     .love-features{
         flex-direction: column-reverse;
         align-items: center;
+        
     }
     .btn-badge{
         border-radius: 8px;
@@ -231,6 +274,12 @@
         margin-top: 25px;
     }
     .love-features-image{
+        align-items: center;
+        max-height: auto;
+    }
+    .fact-cards{
+        flex-direction: column;
+        justify-items: center;
         align-items: center;
     }
 }
@@ -244,7 +293,7 @@
         margin-right: 0px;   
     }
     .love-features{
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: center;
     }
     .love-features-image{
@@ -259,5 +308,18 @@
         max-width: 342px;
         margin-left: 0px;
         margin-top: 25px;
+    }
+    .love-features-image{
+        max-height: fit-content;
+    }
+    .fact-cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 50px;
+    }
+    .some-facts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
